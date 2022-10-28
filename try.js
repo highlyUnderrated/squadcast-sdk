@@ -1,3 +1,5 @@
-const test = require("./lib/sdk/teams/teams");
+const getAllTeams = require('./lib/sdk/teams/teams')
 
-console.log(test.getAllTeams());
+let cc = getAllTeams().then((res) => {
+  console.log(res, 'hello')
+})
