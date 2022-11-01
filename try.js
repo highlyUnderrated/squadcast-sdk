@@ -1,5 +1,5 @@
-const getAllTeams = require('./lib/sdk/teams/teams')
+const team = require('./lib/sdk/teams/teams')
 
-let cc = getAllTeams().then((res) => {
-  console.log(res, 'hello')
+let cc = team.removeTeam("punit-abc-test123").then((res) => {
+  console.log(res)
 })
